@@ -9,13 +9,6 @@ var PORT = 8000;
 app.use(express.urlencoded({ extended:true}));
 app.use(express.json());
 
-//Routes
-app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname, "home.html"))
-})
-app.get('/survey', function(req,res){
-    res.sendFile(path.join(__dirname, "survey.html"))
-});
 
 
 //Start the server to begin to listen
