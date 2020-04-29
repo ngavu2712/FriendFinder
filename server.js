@@ -10,7 +10,6 @@ app.use(express.urlencoded({ extended:true}));
 app.use(express.json());
 
 
-
 //Start the server to begin to listen
 app.listen(PORT, function(){
     console.log("App listening on port: http://localhost:" + PORT)
