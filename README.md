@@ -10,5 +10,5 @@ The concept of Friend Finder is similar to Tinder where you find a friend over t
 * Express 
 * JavaScript
 
-# Demo Video
-
+# Heroku App 
+You can access the deployment of the app on Heroku by [Click here!](https://floating-earth-58263.herokuapp.com/)
