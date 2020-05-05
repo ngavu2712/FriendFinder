@@ -33,9 +33,9 @@ app.get("/api/friends", function(req,res){
             totalDifference += Math.abs(friends[i].scores[j] - userScore[j]);
             //console.log(difference);
             //totalDifference += difference;
-            //console.log(totalDifference);
-
+            
         }
+        console.log(totalDifference);
 
         if(totalDifference < minimalDifference) {
             minimalDifference = totalDifference;
@@ -46,7 +46,7 @@ app.get("/api/friends", function(req,res){
     }
     // push newFriend data from user's response after hitting submit to friends.js array
     friends.push(newFriends); 
-    res.json({status: "OK", matchName: matchName, image: image});
+    res.json({status: 200, matchName: matchName, image: image});
  });
 };
 
